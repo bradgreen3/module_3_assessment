@@ -14,6 +14,5 @@ class BestbuyService
     end
     raw = JSON.parse(response.body, symbolize_names: true)
     raw[:stores]
-    require "pry"; binding.pry
   end
 end

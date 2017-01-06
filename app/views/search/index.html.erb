@@ -2,10 +2,11 @@
   <% @stores.each do |store| %>
     <div class="store">
       <p> Name: <%= store.long_name %> </p>
-      <p> Name: <%= store.city %> </p>
-      <p> Name: <%= store.distance %> </p>
-      <p> Name: <%= store.phone %> </p>
-      <p> Name: <%= store.store_type %> </p>
+      <p> City: <%= store.city %> </p>
+      <p> Distance: <%= store.distance %> </p>
+      <p> Phone: <%= store.phone %> </p>
+      <p> Type: <%= store.store_type %> </p>
     </div>
+    <br>
   <% end %>
 </div>
