@@ -11,8 +11,8 @@ describe "a user who searches for a store" do
 
   expect(current_path).to eq(search_path)
   # expect(page).to have_content('all the stores within 25 miles')
-  # expect(page).to have_content('message saying: 15 total stores')
-  # expect(page).to have_content('there to be exactly 15 stores on the page')
-  # expect(page).to have_content('long name, city, distance, phone number and store type for each of the 15 results')
+  # expect(page).to have_content('message saying: 16 total stores')
+  # expect(page).to have_content('there to be exactly 16 stores on the page')
+  # expect(page).to have_content('long name, city, distance, phone number and store type for each of the 16 results')
   end
 end
