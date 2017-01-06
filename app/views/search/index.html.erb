@@ -1,7 +1,11 @@
 <div class="container">
   <% @stores.each do |store| %>
     <div class="store">
-      <p> Name: <%= station.station_name %> </p>
+      <p> Name: <%= store.long_name %> </p>
+      <p> Name: <%= store.city %> </p>
+      <p> Name: <%= store.distance %> </p>
+      <p> Name: <%= store.phone %> </p>
+      <p> Name: <%= store.store_type %> </p>
     </div>
   <% end %>
 </div>

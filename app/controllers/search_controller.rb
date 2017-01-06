@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
   def index
-    @stores = Bestbuy.stores(ENV['api_key'], params[:zip])
+    @stores = Bestbuy.stores_by_zip(params[:zip])
   end
 end
