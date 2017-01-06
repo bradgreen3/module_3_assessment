@@ -11,7 +11,7 @@ class Api::V1::ItemsController < ApplicationController
   def create
     @item = Item.new(item_params)
     if @item.save
-      render json: Item.create(item_params)
+      render json: Item.create(item_params), status: 201
     else
       render status: 400
     end

@@ -51,10 +51,10 @@ describe "items endpoint" do
       it "creates new item" do
 
         item_params = { name: "Test item",
-          description: "80210",
-          image_url: "Capital of Colorado" }
+          description: "An item used for testing",
+          image_url: "http://robohash.org/0.png?set=set2&bgset=bg1&size=200x200" }
 
-        post "/api/v1/items", params: {item: item_params}
+        post "/api/v1/items", item: item_params
 
         json_response_item = JSON.parse(response.body)
 
