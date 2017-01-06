@@ -16,6 +16,7 @@ gem "figaro"
 gem 'faraday'
 gem 'rb-readline'
 gem 'coolline'
+gem 'active_model_serializers'
 
 group :development do
   gem "spring"
