@@ -16,6 +16,6 @@ describe "user clicks on store" do
 
     # I should see the store name, store type and address with city, state and zip
     # I should see an unordered list of the store hours in the following format:
-
+    end
   end
 end
