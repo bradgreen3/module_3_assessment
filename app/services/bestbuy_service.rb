@@ -4,17 +4,17 @@ class BestbuyService
 
   def conn
     Faraday.new(:url => "https://api.bestbuy.com/v1") do |f|
-      f.params[:apiKey] = ENV['api_key']
-      f.params[:format] = 'json'
       f.adapter            Faraday.default_adapter
     end
   end
 
   def stores_by_zip(zip)
-    response = conn.get "/stores/(area(#{zip},25))"
+    response = conn.get do |req|
+      req.url "/stores(area(#{zip}, 25))"
+      req.params[:format] = 'json'
+      req.params[:apiKey] = ENV['api_key']
+    end
     raw = JSON.parse(response.body, symbolize_names: true)
-    require "pry"; binding.pry
-    # raw[:????]
+    raw[:stores]
   end
-
 end
